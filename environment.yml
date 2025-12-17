@@ -1,0 +1,13 @@
+name: dynamic-matching
+channels:
+  - conda-forge
+dependencies:
+  - python=3.10
+  - numpy
+  - scipy
+  - pulp
+  - gymnasium
+  - coincbc
+  - pip
+  - pip:
+      - jupyter
