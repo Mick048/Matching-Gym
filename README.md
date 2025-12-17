@@ -2,10 +2,11 @@
 
 This repo contains a simple dynamic matching simulation (Gym-style environment + agents) and a static LP solver used inside policies.
 
-## 0. Clone the Repositary
+## 0. Clone the Repositary & Change the Directory
 
 ```bash
 git clone git@github.com:Mick048/Matching-Gym.git
+cd Matching-Gym
 ```
 
 ## 1. Create + Activate env
