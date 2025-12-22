@@ -1,6 +1,5 @@
 import numpy as np
-from Static_Solver import StaticSolver
-
+from utils.Static_Solver import StaticSolver
 
 '''
 All agents should inherit from the Agent class.
@@ -12,18 +11,14 @@ class Agent(object):
     def reset(self):
         pass
     def update_config(self, env, config):
-        ''' Update agent information based on the config__file'''
+        ''' Update agent information according to config file'''
         pass
-    def update_parameters(self, param):
-        pass
-    def update_obs(self, obs, action, reward, newObs, timestep, info):
-        '''Add observation to records'''
-        pass
-    def update_policy(self, h):
-        '''Update internal policy based upon records'''
+
+    def update_policy(self, arrival=None, remain_action_list=None, t=None):
+        '''Update policy based record history'''
         pass
     def pick_action(self, obs, h):
-        '''Select an action based upon the observation'''
+        '''Select an action based on the observation'''
         pass
 
 
@@ -49,16 +44,9 @@ class GreedyAgent(Agent):
         self.m = self.matches.shape[0]
         self.rewards = config["R"]
         self.arrivals = config["IQ"] # Inital Queue
-
-    def update_parameters(self, param):
-        pass
-
-    def update_obs(self, obs, action, reward, newObs, timestep, info):
-        '''Add observation to records'''
-        pass
-
+    
     def update_policy(self, arrival=None, remain_action_list=None, t=None):
-        '''Update internal policy based upon records'''
+        '''Update policy based record history'''
         pass
 
     def pick_action(self, queue, arrival, t):
@@ -116,16 +104,8 @@ class MaxQueueAgent(Agent):
         if len(self.valid_indices) != self.matches.shape[1]:
             raise ValueError("Primal solution not basic feasible")
 
-
-    def update_parameters(self, param):
-        pass
-
-    def update_obs(self, obs, action, reward, newObs, timestep, info):
-        '''Add observation to records'''
-        pass
-
     def update_policy(self, arrival=None, remain_action_list=None, t=None):
-        '''Update internal policy based upon records'''
+        '''Update policy based record history'''
         pass
 
     def pick_action(self, queue, arrival, t):
@@ -186,14 +166,6 @@ class PrimalDualBlindAgent(Agent):
         # Initialize solver with empirical arrival rates
         self.solver = StaticSolver(self.matches, self.arrival_sum, self.rewards[0])
 
-
-
-    def update_parameters(self, param):
-        pass
-
-    def update_obs(self, obs, action, reward, newObs, timestep, info):
-        '''Add observation to records'''
-        pass
 
     def update_policy(self, arrival=None, remain_action_list=None, t=None):
         '''Update internal policy based upon records'''

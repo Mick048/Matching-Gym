@@ -1,7 +1,7 @@
-from Environment import DynamicMatching
-from Config import CONFIG
-from Agents import GreedyAgent, MaxQueueAgent, PrimalDualBlindAgent, PrimalDualAgent
-from Experiments import Experiment
+from utils.Environment import DynamicMatching
+from utils.Config import CONFIG
+from utils.Agents import GreedyAgent, MaxQueueAgent, PrimalDualBlindAgent, PrimalDualAgent
+from utils.Experiments import Experiment
 
 if __name__ == "__main__":
     ''' Generate Env Config '''
@@ -13,8 +13,8 @@ if __name__ == "__main__":
     ''' Choose Agent for the Env '''
     # DM_AGENT = GreedyAgent()
     # DM_AGENT = MaxQueueAgent()
-    DM_AGENT = PrimalDualBlindAgent()
-    # DM_AGENT = PrimalDualAgent()
+    # DM_AGENT = PrimalDualBlindAgent()
+    DM_AGENT = PrimalDualAgent()
     
     ''' Settup & Run the Exp '''
     Greedy_Exp = Experiment(env = DM_ENV, agent = DM_AGENT)
