@@ -1,0 +1,22 @@
+name: kidney-exchange-sim
+channels:
+  - conda-forge
+dependencies:
+  - python=3.10
+  - pip
+
+  # Core scientific stack
+  - numpy>=1.24
+  - scipy>=1.10
+  - pandas>=2.0
+
+  # Notebooks / plotting (optional but useful)
+  - ipykernel
+  - jupyterlab
+  - matplotlib
+
+  # Utilities
+  - tqdm
+
+  - pip:
+      - typing-extensions
