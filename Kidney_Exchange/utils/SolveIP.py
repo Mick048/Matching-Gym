@@ -142,8 +142,9 @@ def SolveIP_scipy(graph, max_cycle_len=3, max_chain_len=4, *, profile=False):
 
     return chosen
 
-
-def SolveIP_gurobi(graph, max_cycle_len=3, max_chain_len=4, *, verbose=False, time_limit=None, mip_gap=None):
+def SolveIP_gurobi(graph, max_cycle_len=3, max_chain_len=4, *,
+                   verbose=False, time_limit=None, mip_gap=None,
+                   profile=False, return_timing=False):
     """
     Solve the standard kidney exchange IP via Gurobi:
 
@@ -151,15 +152,42 @@ def SolveIP_gurobi(graph, max_cycle_len=3, max_chain_len=4, *, verbose=False, ti
         s.t.  for each vertex v: sum_{s: v in nodes(s)} x_s <= 1
               x_s in {0,1}
 
-    Returns:
-      chosen: list of structures (same format as enumerate_structures)
+    If profile=True: print timing.
+    If return_timing=True: return (chosen, timing_dict); else return chosen.
+
+    timing_dict:
+      {
+        "enumerate_seconds": float,
+        "solve_seconds": float,
+        "total_seconds": float,
+        "n_structures": int,
+        "n_vertices": int
+      }
     """
     import gurobipy as gp
     from gurobipy import GRB
 
+    t_all = time.perf_counter()
+
+    # 1) enumerate structures timing
+    t0 = time.perf_counter()
     structures = enumerate_structures(graph, max_cycle_len=max_cycle_len, max_chain_len=max_chain_len)
+    t_enum = time.perf_counter() - t0
+
     if not structures:
-        return []
+        timing = {
+            "enumerate_seconds": t_enum,
+            "solve_seconds": 0.0,
+            "total_seconds": time.perf_counter() - t_all,
+            "n_structures": 0,
+            "n_vertices": len(graph.V),
+        }
+        if profile:
+            print(f"[SolveIP_gurobi] enum={t_enum:.6f}s | structures=0 | solve=0.000000s | total={timing['total_seconds']:.6f}s")
+        return ([], timing) if return_timing else []
+
+    # 2) build+solve timing (we measure from model construction through optimize)
+    t0 = time.perf_counter()
 
     m = gp.Model("kidney_exchange_ip")
     m.Params.OutputFlag = 1 if verbose else 0
@@ -187,8 +215,26 @@ def SolveIP_gurobi(graph, max_cycle_len=3, max_chain_len=4, *, verbose=False, ti
 
     m.optimize()
 
+    t_solve = time.perf_counter() - t0
+    t_total = time.perf_counter() - t_all
+
     if m.Status not in (GRB.OPTIMAL, GRB.TIME_LIMIT, GRB.SUBOPTIMAL):
         raise RuntimeError(f"SolveIP_gurobi failed: status={m.Status}")
 
     chosen = [structures[j] for j in range(n_vars) if x[j].X > 0.5]
+
+    timing = {
+        "enumerate_seconds": t_enum,
+        "solve_seconds": t_solve,
+        "total_seconds": t_total,
+        "n_structures": n_vars,
+        "n_vertices": len(graph.V),
+    }
+
+    if profile:
+        print(
+            f"[SolveIP_gurobi] enum={t_enum:.6f}s | structures={n_vars} | "
+            f"solve={t_solve:.6f}s | total={t_total:.6f}s"
+        )
+
     return chosen

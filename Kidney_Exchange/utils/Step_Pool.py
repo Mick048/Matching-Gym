@@ -1,11 +1,11 @@
-from utils.SolveIP import SolveIP_scipy
+from utils.SolveIP import SolveIP_scipy, SolveIP_gurobi
 from utils.Events import expire, renege, negative_crossmatch
 from utils.Sample_Arrivals import sample_arrivals
 from utils.Build_Edges import build_edges
 
 def step_pool(graph, t, lam_p, lam_a, f_p, f_a, rng,
               expire_prob=0.00220192718495970, renege_prob=0.5,
-              max_cycle_len=3, max_chain_len=3):
+              max_cycle_len=3, max_chain_len=4):
     """
     Returns:
       graph (updated in-place),
@@ -13,7 +13,8 @@ def step_pool(graph, t, lam_p, lam_a, f_p, f_a, rng,
     """
 
     # 1) SolveIP -> return chosen STRUCTURES (cycle/chain grouped with order)
-    chosen = SolveIP_scipy(graph, max_cycle_len=max_cycle_len, max_chain_len=max_chain_len, profile=True)
+    # chosen = SolveIP_scipy(graph, max_cycle_len=max_cycle_len, max_chain_len=max_chain_len, profile=True)
+    chosen = SolveIP_gurobi(graph, max_cycle_len=max_cycle_len, max_chain_len=max_chain_len, profile=True)
 
     # 2) Expire on V(t)
     expired = set()
