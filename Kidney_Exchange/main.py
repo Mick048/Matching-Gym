@@ -23,17 +23,15 @@ if __name__ == "__main__":
 
     print("Initial: |V(0)| =", len(g.V), ", |E(0)| =", len(g.E))
 
-    for t in range(8):
+    for t in range(20):
         g, D = step_pool(
             graph=g,
             t=t,
-            lam_p=3.0,
-            lam_a=1.0,
+            lam_p=4.77,
+            lam_a=0.15,
             f_p=f_p,
             f_a=f_a,
             rng=rng,
-            expire_prob=0.01,
-            renege_prob=0.02,
         )
         print(
             "t =", t,

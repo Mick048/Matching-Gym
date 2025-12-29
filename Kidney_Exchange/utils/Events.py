@@ -1,4 +1,4 @@
-def expire(vertex, rng, prob=0.01):
+def expire(vertex, rng, prob=0.00220192718495970):
     """Paper: expire with (calibrated) constant probability. Here keep as parameter."""
     return rng.random() < prob
 
@@ -14,7 +14,7 @@ def negative_crossmatch(patient_vertex, rng):
     return rng.random() < (cpra / 100.0)
 
 
-def renege(pair_vertex, rng, default_prob=0.02):
+def renege(pair_vertex, rng, default_prob=0.5):
     """
     Paper: only relevant for CHAINS (non-simultaneous) — the paired donor may renege
     on continuing the chain.

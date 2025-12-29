@@ -1,5 +1,6 @@
 from collections import Counter
 from utils.Data_Structure import Vertex, Graph
+import time
 
 def abo_compatible(donor_abo: str, cand_abo: str) -> bool:
     '''
@@ -170,26 +171,29 @@ def w_optn(donor_vertex: Vertex, cand_vertex: Vertex, graph: Graph) -> float:
     return float(w)
 
 
-
-
-def build_edges(graph: Graph, rng, disallow_known_failed_crossmatch: bool = False):
+def build_edges(graph: Graph,
+               profile: bool = False, return_timing: bool = False):
     """
     Build feasible directed edges (u -> v) and set weights graph.E[(u,v)].
 
-    Feasibility:
-      - v must NOT be altruist
-      - ABO compatible between u's donor ABO and v's candidate ABO
+    If profile=True: print timing.
+    If return_timing=True: return (timing_dict), else return None.
 
-    Optional:
-      - If disallow_known_failed_crossmatch=True and crossmatch_hist says (u,v) failed before,
-        skip building that edge.
-
-    Weight:
-      - w_optn(u, v, graph) computes 0-ABDR from HLA and reads crossmatch_hist.
+    timing_dict:
+      {
+        "seconds": float,
+        "n_vertices": int,
+        "n_edges": int,
+        "n_pairs_checked": int
+      }
     """
-    graph.E.clear()
+    t0 = time.perf_counter()
 
+    graph.E.clear()
     vids = list(graph.V.keys())
+
+    n_pairs_checked = 0  # number of (i,j) considered with i!=j
+
     for i in vids:
         u = graph.V[i]
         d_abo = donor_abo_of(u)
@@ -197,6 +201,7 @@ def build_edges(graph: Graph, rng, disallow_known_failed_crossmatch: bool = Fals
         for j in vids:
             if i == j:
                 continue
+            n_pairs_checked += 1
 
             v = graph.V[j]
             if v.is_altruist:
@@ -206,9 +211,25 @@ def build_edges(graph: Graph, rng, disallow_known_failed_crossmatch: bool = Fals
             if not abo_compatible(d_abo, c_abo):
                 continue
 
-            if disallow_known_failed_crossmatch:
-                prev = graph.crossmatch_hist.get((i, j), None)
-                if prev is False:
-                    continue
-
             graph.E[(i, j)] = float(w_optn(u, v, graph))
+
+    dt = time.perf_counter() - t0
+
+    timing = {
+        "seconds": dt,
+        "n_vertices": len(vids),
+        "n_edges": len(graph.E),
+        "n_pairs_checked": n_pairs_checked,
+    }
+
+    if profile:
+        print(
+            f"[build_edges] time={dt:.6f}s | "
+            f"|V|={timing['n_vertices']} | |E|={timing['n_edges']} | checked={timing['n_pairs_checked']}"
+        )
+
+    if return_timing:
+        return timing
+    return None
+
+            
