@@ -1,0 +1,129 @@
+[LOG] experimental_results/logs/gurobi_K3L2_seed0_20260114_223834.log
+[build_edges] time=0.000004s | |V|=2 | |E|=0 | checked=2
+SOLVER = gurobi | seed = 0
+T = 40 | lam_p = 4.77 | lam_a = 0.15 | K = 3 | L = 2
+Initial: |V(0)| = 2 , |E(0)| = 0
+[SolveIP_gurobi] enum_total=0.000011s (cycles=0.000005s, chains=0.000003s) | cycles=0 chains=0 | structures=0 | solve=0.000000s | total=0.000012s
+[build_edges] time=0.000112s | |V|=6 | |E|=10 | checked=30
+t = 0 |departures| = 0 , |V(t)| = 6 , |E(t)| = 10
+Set parameter Username
+Set parameter LicenseID to value 2759812
+Academic license - for non-commercial use only - expires 2026-12-29
+[SolveIP_gurobi] enum_total=0.000023s (cycles=0.000017s, chains=0.000001s) | cycles=1 chains=0 | structures=1 | solve=0.003563s | total=0.003586s
+[build_edges] time=0.000595s | |V|=16 | |E|=97 | checked=240
+t = 1 |departures| = 0 , |V(t)| = 16 , |E(t)| = 97
+[SolveIP_gurobi] enum_total=0.001379s (cycles=0.001357s, chains=0.000002s) | cycles=97 chains=0 | structures=97 | solve=0.001030s | total=0.002409s
+[build_edges] time=0.000765s | |V|=18 | |E|=135 | checked=306
+t = 2 |departures| = 0 , |V(t)| = 18 , |E(t)| = 135
+[SolveIP_gurobi] enum_total=0.002843s (cycles=0.002819s, chains=0.000002s) | cycles=202 chains=0 | structures=202 | solve=0.002860s | total=0.005704s
+[build_edges] time=0.001595s | |V|=24 | |E|=281 | checked=552
+t = 3 |departures| = 0 , |V(t)| = 24 , |E(t)| = 281
+[SolveIP_gurobi] enum_total=0.012967s (cycles=0.012284s, chains=0.000635s) | cycles=648 chains=347 | structures=995 | solve=0.009172s | total=0.022141s
+[build_edges] time=0.002091s | |V|=28 | |E|=384 | checked=756
+t = 4 |departures| = 3 , |V(t)| = 28 , |E(t)| = 384
+[SolveIP_gurobi] enum_total=0.024696s (cycles=0.024545s, chains=0.000076s) | cycles=1038 chains=92 | structures=1130 | solve=0.011477s | total=0.036174s
+[build_edges] time=0.002007s | |V|=30 | |E|=402 | checked=870
+t = 5 |departures| = 2 , |V(t)| = 30 , |E(t)| = 402
+[SolveIP_gurobi] enum_total=0.037770s (cycles=0.037497s, chains=0.000206s) | cycles=1122 chains=250 | structures=1372 | solve=0.012466s | total=0.050237s
+[build_edges] time=0.003873s | |V|=40 | |E|=822 | checked=1560
+t = 6 |departures| = 0 , |V(t)| = 40 , |E(t)| = 822
+[SolveIP_gurobi] enum_total=0.113586s (cycles=0.113032s, chains=0.000416s) | cycles=3399 chains=454 | structures=3853 | solve=0.032518s | total=0.146105s
+[build_edges] time=0.004353s | |V|=42 | |E|=930 | checked=1722
+t = 7 |departures| = 4 , |V(t)| = 42 , |E(t)| = 930
+[SolveIP_gurobi] enum_total=0.146704s (cycles=0.146329s, chains=0.000227s) | cycles=4065 chains=242 | structures=4307 | solve=0.040576s | total=0.187281s
+[build_edges] time=0.006596s | |V|=52 | |E|=1349 | checked=2652
+t = 8 |departures| = 0 , |V(t)| = 52 , |E(t)| = 1349
+[SolveIP_gurobi] enum_total=0.289332s (cycles=0.288801s, chains=0.000285s) | cycles=6573 chains=295 | structures=6868 | solve=0.078253s | total=0.367587s
+[build_edges] time=0.007926s | |V|=54 | |E|=1602 | checked=2862
+t = 9 |departures| = 2 , |V(t)| = 54 , |E(t)| = 1602
+[SolveIP_gurobi] enum_total=0.457457s (cycles=0.457174s, chains=0.000006s) | cycles=10040 chains=0 | structures=10040 | solve=0.097104s | total=0.554562s
+[build_edges] time=0.007479s | |V|=52 | |E|=1506 | checked=2652
+t = 10 |departures| = 4 , |V(t)| = 52 , |E(t)| = 1506
+[SolveIP_gurobi] enum_total=0.427153s (cycles=0.426851s, chains=0.000009s) | cycles=9383 chains=0 | structures=9383 | solve=0.071381s | total=0.498535s
+[build_edges] time=0.008823s | |V|=58 | |E|=1823 | checked=3306
+t = 11 |departures| = 0 , |V(t)| = 58 , |E(t)| = 1823
+[SolveIP_gurobi] enum_total=0.586811s (cycles=0.586476s, chains=0.000006s) | cycles=11538 chains=0 | structures=11538 | solve=0.085906s | total=0.672718s
+[build_edges] time=0.009379s | |V|=60 | |E|=1865 | checked=3540
+t = 12 |departures| = 3 , |V(t)| = 60 , |E(t)| = 1865
+[SolveIP_gurobi] enum_total=0.617612s (cycles=0.616796s, chains=0.000452s) | cycles=12228 chains=521 | structures=12749 | solve=0.120878s | total=0.738491s
+[build_edges] time=0.009600s | |V|=62 | |E|=1993 | checked=3782
+t = 13 |departures| = 0 , |V(t)| = 62 , |E(t)| = 1993
+[SolveIP_gurobi] enum_total=0.707927s (cycles=0.707102s, chains=0.000479s) | cycles=13532 chains=538 | structures=14070 | solve=0.123864s | total=0.831793s
+[build_edges] time=0.011543s | |V|=68 | |E|=2346 | checked=4556
+t = 14 |departures| = 1 , |V(t)| = 68 , |E(t)| = 2346
+[SolveIP_gurobi] enum_total=0.922165s (cycles=0.921064s, chains=0.000651s) | cycles=15758 chains=697 | structures=16455 | solve=0.161489s | total=1.083655s
+[build_edges] time=0.014196s | |V|=73 | |E|=2851 | checked=5256
+t = 15 |departures| = 0 , |V(t)| = 73 , |E(t)| = 2851
+[SolveIP_gurobi] enum_total=1.401066s (cycles=1.399543s, chains=0.001003s) | cycles=22220 chains=841 | structures=23061 | solve=0.166170s | total=1.567238s
+[build_edges] time=0.014380s | |V|=74 | |E|=2823 | checked=5402
+t = 16 |departures| = 3 , |V(t)| = 74 , |E(t)| = 2823
+[SolveIP_gurobi] enum_total=1.309848s (cycles=1.308514s, chains=0.000785s) | cycles=20663 chains=870 | structures=21533 | solve=0.177136s | total=1.486985s
+[build_edges] time=0.016082s | |V|=78 | |E|=3193 | checked=6006
+t = 17 |departures| = 4 , |V(t)| = 78 , |E(t)| = 3193
+[SolveIP_gurobi] enum_total=1.655680s (cycles=1.654997s, chains=0.000008s) | cycles=24537 chains=0 | structures=24537 | solve=0.244413s | total=1.900094s
+[build_edges] time=0.017827s | |V|=85 | |E|=3654 | checked=7140
+t = 18 |departures| = 4 , |V(t)| = 85 , |E(t)| = 3654
+[SolveIP_gurobi] enum_total=2.075419s (cycles=2.074641s, chains=0.000011s) | cycles=27844 chains=0 | structures=27844 | solve=0.269850s | total=2.345271s
+[build_edges] time=0.028182s | |V|=86 | |E|=3827 | checked=7310
+t = 19 |departures| = 3 , |V(t)| = 86 , |E(t)| = 3827
+[SolveIP_gurobi] enum_total=2.414220s (cycles=2.413471s, chains=0.000008s) | cycles=32139 chains=0 | structures=32139 | solve=0.302815s | total=2.717036s
+[build_edges] time=0.022777s | |V|=95 | |E|=4600 | checked=8930
+t = 20 |departures| = 0 , |V(t)| = 95 , |E(t)| = 4600
+[SolveIP_gurobi] enum_total=3.407997s (cycles=3.407067s, chains=0.000010s) | cycles=40609 chains=0 | structures=40609 | solve=0.356365s | total=3.764363s
+[build_edges] time=0.025781s | |V|=97 | |E|=4698 | checked=9312
+t = 21 |departures| = 0 , |V(t)| = 97 , |E(t)| = 4698
+[SolveIP_gurobi] enum_total=3.467271s (cycles=3.466329s, chains=0.000008s) | cycles=41133 chains=0 | structures=41133 | solve=0.375511s | total=3.842784s
+[build_edges] time=0.025460s | |V|=101 | |E|=5145 | checked=10100
+t = 22 |departures| = 2 , |V(t)| = 101 , |E(t)| = 5145
+[SolveIP_gurobi] enum_total=4.179853s (cycles=4.178885s, chains=0.000009s) | cycles=47771 chains=0 | structures=47771 | solve=0.463835s | total=4.643689s
+[build_edges] time=0.027253s | |V|=105 | |E|=5557 | checked=10920
+t = 23 |departures| = 0 , |V(t)| = 105 , |E(t)| = 5557
+[SolveIP_gurobi] enum_total=4.807523s (cycles=4.806467s, chains=0.000009s) | cycles=52599 chains=0 | structures=52599 | solve=0.405097s | total=5.212621s
+[build_edges] time=0.029320s | |V|=109 | |E|=6039 | checked=11772
+t = 24 |departures| = 0 , |V(t)| = 109 , |E(t)| = 6039
+[SolveIP_gurobi] enum_total=5.736084s (cycles=5.734914s, chains=0.000008s) | cycles=60830 chains=0 | structures=60830 | solve=0.559057s | total=6.295143s
+[build_edges] time=0.029420s | |V|=110 | |E|=6101 | checked=11990
+t = 25 |departures| = 4 , |V(t)| = 110 , |E(t)| = 6101
+[SolveIP_gurobi] enum_total=5.955563s (cycles=5.954371s, chains=0.000009s) | cycles=62968 chains=0 | structures=62968 | solve=0.504843s | total=6.460408s
+[build_edges] time=0.029560s | |V|=107 | |E|=5662 | checked=11342
+t = 26 |departures| = 6 , |V(t)| = 107 , |E(t)| = 5662
+[SolveIP_gurobi] enum_total=5.085294s (cycles=5.084178s, chains=0.000009s) | cycles=55608 chains=0 | structures=55608 | solve=0.450288s | total=5.535583s
+[build_edges] time=0.032069s | |V|=114 | |E|=6533 | checked=12882
+t = 27 |departures| = 1 , |V(t)| = 114 , |E(t)| = 6533
+[SolveIP_gurobi] enum_total=6.840613s (cycles=6.839374s, chains=0.000008s) | cycles=69937 chains=0 | structures=69937 | solve=0.583769s | total=7.424384s
+[build_edges] time=0.032338s | |V|=115 | |E|=6574 | checked=13110
+t = 28 |departures| = 0 , |V(t)| = 115 , |E(t)| = 6574
+[SolveIP_gurobi] enum_total=6.883965s (cycles=6.882649s, chains=0.000036s) | cycles=70027 chains=0 | structures=70027 | solve=0.560611s | total=7.444577s
+[build_edges] time=0.032630s | |V|=116 | |E|=6621 | checked=13340
+t = 29 |departures| = 2 , |V(t)| = 116 , |E(t)| = 6621
+[SolveIP_gurobi] enum_total=6.979970s (cycles=6.978650s, chains=0.000012s) | cycles=70552 chains=0 | structures=70552 | solve=0.722188s | total=7.702159s
+[build_edges] time=0.035567s | |V|=120 | |E|=7150 | checked=14280
+t = 30 |departures| = 0 , |V(t)| = 120 , |E(t)| = 7150
+[SolveIP_gurobi] enum_total=8.091326s (cycles=8.089886s, chains=0.000010s) | cycles=78868 chains=0 | structures=78868 | solve=0.621248s | total=8.712574s
+[build_edges] time=0.037890s | |V|=123 | |E|=7375 | checked=15006
+t = 31 |departures| = 0 , |V(t)| = 123 , |E(t)| = 7375
+[SolveIP_gurobi] enum_total=8.541902s (cycles=8.540389s, chains=0.000009s) | cycles=81298 chains=0 | structures=81298 | solve=0.591554s | total=9.133457s
+[build_edges] time=0.040403s | |V|=128 | |E|=8055 | checked=16256
+t = 32 |departures| = 2 , |V(t)| = 128 , |E(t)| = 8055
+[SolveIP_gurobi] enum_total=9.752976s (cycles=9.743878s, chains=0.007371s) | cycles=89111 chains=8055 | structures=97166 | solve=0.798642s | total=10.551619s
+[build_edges] time=0.040212s | |V|=129 | |E|=8134 | checked=16512
+t = 33 |departures| = 3 , |V(t)| = 129 , |E(t)| = 8134
+[SolveIP_gurobi] enum_total=9.906089s (cycles=9.897148s, chains=0.007287s) | cycles=89958 chains=8134 | structures=98092 | solve=0.788012s | total=10.694102s
+[build_edges] time=0.040164s | |V|=129 | |E|=8130 | checked=16512
+t = 34 |departures| = 4 , |V(t)| = 129 , |E(t)| = 8130
+[SolveIP_gurobi] enum_total=10.012032s (cycles=10.010361s, chains=0.000013s) | cycles=89533 chains=0 | structures=89533 | solve=0.836191s | total=10.848224s
+[build_edges] time=0.039635s | |V|=129 | |E|=8109 | checked=16512
+t = 35 |departures| = 4 , |V(t)| = 129 , |E(t)| = 8109
+[SolveIP_gurobi] enum_total=10.138258s (cycles=10.136626s, chains=0.000009s) | cycles=91352 chains=0 | structures=91352 | solve=0.924211s | total=11.062472s
+[build_edges] time=0.042605s | |V|=131 | |E|=8557 | checked=17030
+t = 36 |departures| = 3 , |V(t)| = 131 , |E(t)| = 8557
+[SolveIP_gurobi] enum_total=11.531515s (cycles=11.529799s, chains=0.000010s) | cycles=102334 chains=0 | structures=102334 | solve=0.958897s | total=12.490413s
+[build_edges] time=0.047859s | |V|=140 | |E|=9928 | checked=19460
+t = 37 |departures| = 0 , |V(t)| = 140 , |E(t)| = 9928
+[SolveIP_gurobi] enum_total=15.452885s (cycles=15.450665s, chains=0.000011s) | cycles=126540 chains=0 | structures=126540 | solve=1.128054s | total=16.580940s
+[build_edges] time=0.050973s | |V|=144 | |E|=10492 | checked=20592
+t = 38 |departures| = 0 , |V(t)| = 144 , |E(t)| = 10492
+[SolveIP_gurobi] enum_total=17.150938s (cycles=17.148418s, chains=0.000011s) | cycles=136359 chains=0 | structures=136359 | solve=1.076892s | total=18.227831s
+[build_edges] time=0.051832s | |V|=144 | |E|=10438 | checked=20592
+t = 39 |departures| = 2 , |V(t)| = 144 , |E(t)| = 10438
+DONE | final |V| = 144 | final |E| = 10438

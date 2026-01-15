@@ -1,0 +1,142 @@
+[LOG] experimental_results/logs/pief_K3L4_seed0_20260114_215339.log
+[build_edges] time=0.000007s | |V|=2 | |E|=0 | checked=2
+SOLVER = pief | seed = 0
+T = 50 | lam_p = 4.77 | lam_a = 0.15 | K = 3 | L = 4
+Initial: |V(0)| = 2 , |E(0)| = 0
+[SolveIP_PIEF_gurobi] K=3 | prep=0.000004s | edgesP=0 | solve=0.000000s | total=0.000005s | chosen=0
+[build_edges] time=0.000122s | |V|=6 | |E|=10 | checked=30
+t = 0 |departures| = 0 , |V(t)| = 6 , |E(t)| = 10
+Set parameter Username
+Set parameter LicenseID to value 2759812
+Academic license - for non-commercial use only - expires 2026-12-29
+[SolveIP_PIEF_gurobi] K=3 | prep=0.000006s | edgesP=10 | y_vars=30 | solve=0.015174s | total=0.015181s | chosen_cycles=0
+[build_edges] time=0.000461s | |V|=14 | |E|=74 | checked=182
+t = 1 |departures| = 0 , |V(t)| = 14 , |E(t)| = 74
+[SolveIP_PIEF_gurobi] K=3 | prep=0.000021s | edgesP=74 | y_vars=222 | solve=0.008847s | total=0.008870s | chosen_cycles=0
+[build_edges] time=0.000838s | |V|=18 | |E|=149 | checked=306
+t = 2 |departures| = 0 , |V(t)| = 18 , |E(t)| = 149
+[SolveIP_PIEF_gurobi] K=3 | prep=0.000033s | edgesP=149 | y_vars=447 | solve=0.009045s | total=0.009079s | chosen_cycles=1
+[build_edges] time=0.002304s | |V|=30 | |E|=400 | checked=870
+t = 3 |departures| = 0 , |V(t)| = 30 , |E(t)| = 400
+[SolveIP_PIEF_gurobi] K=3 | prep=0.000074s | edgesP=400 | y_vars=1200 | solve=0.039871s | total=0.039947s | chosen_cycles=1
+[build_edges] time=0.002296s | |V|=32 | |E|=425 | checked=992
+t = 4 |departures| = 0 , |V(t)| = 32 , |E(t)| = 425
+[SolveIP_PIEF_gurobi] K=3 | prep=0.000083s | edgesP=425 | y_vars=1275 | solve=0.065486s | total=0.065570s | chosen_cycles=1
+[build_edges] time=0.003199s | |V|=39 | |E|=666 | checked=1482
+t = 5 |departures| = 0 , |V(t)| = 39 , |E(t)| = 666
+[SolveIP_PIEF_gurobi] K=3 | prep=0.000118s | edgesP=666 | y_vars=1998 | solve=0.140796s | total=0.140915s | chosen_cycles=3
+[build_edges] time=0.003877s | |V|=43 | |E|=825 | checked=1806
+t = 6 |departures| = 0 , |V(t)| = 43 , |E(t)| = 825
+[SolveIP_PIEF_gurobi] K=3 | prep=0.000129s | edgesP=783 | y_vars=2349 | solve=0.043456s | total=0.043587s | chosen_cycles=1
+[build_edges] time=0.006288s | |V|=54 | |E|=1243 | checked=2862
+t = 7 |departures| = 1 , |V(t)| = 54 , |E(t)| = 1243
+[SolveIP_PIEF_gurobi] K=3 | prep=0.000258s | edgesP=1182 | y_vars=3546 | solve=0.162234s | total=0.162493s | chosen_cycles=3
+[build_edges] time=0.007441s | |V|=59 | |E|=1504 | checked=3422
+t = 8 |departures| = 0 , |V(t)| = 59 , |E(t)| = 1504
+[SolveIP_PIEF_gurobi] K=3 | prep=0.000333s | edgesP=1436 | y_vars=4308 | solve=2.669456s | total=2.669790s | chosen_cycles=2
+[build_edges] time=0.008824s | |V|=64 | |E|=1736 | checked=4032
+t = 9 |departures| = 0 , |V(t)| = 64 , |E(t)| = 1736
+[SolveIP_PIEF_gurobi] K=3 | prep=0.000373s | edgesP=1662 | y_vars=4986 | solve=0.185712s | total=0.186087s | chosen_cycles=1
+[build_edges] time=0.010362s | |V|=71 | |E|=2158 | checked=4970
+t = 10 |departures| = 0 , |V(t)| = 71 , |E(t)| = 2158
+[SolveIP_PIEF_gurobi] K=3 | prep=0.000410s | edgesP=2075 | y_vars=6225 | solve=2.609454s | total=2.609867s | chosen_cycles=1
+[build_edges] time=0.012932s | |V|=77 | |E|=2566 | checked=5852
+t = 11 |departures| = 0 , |V(t)| = 77 , |E(t)| = 2566
+[SolveIP_PIEF_gurobi] K=3 | prep=0.000554s | edgesP=2477 | y_vars=7431 | solve=3.193942s | total=3.194499s | chosen_cycles=4
+[build_edges] time=0.012857s | |V|=78 | |E|=2605 | checked=6006
+t = 12 |departures| = 0 , |V(t)| = 78 , |E(t)| = 2605
+[SolveIP_PIEF_gurobi] K=3 | prep=0.000556s | edgesP=2515 | y_vars=7545 | solve=2.557648s | total=2.558206s | chosen_cycles=0
+[build_edges] time=0.014635s | |V|=85 | |E|=2858 | checked=7140
+t = 13 |departures| = 0 , |V(t)| = 85 , |E(t)| = 2858
+[SolveIP_PIEF_gurobi] K=3 | prep=0.000528s | edgesP=2732 | y_vars=8196 | solve=0.142434s | total=0.142963s | chosen_cycles=0
+[build_edges] time=0.014968s | |V|=87 | |E|=2985 | checked=7482
+t = 14 |departures| = 0 , |V(t)| = 87 , |E(t)| = 2985
+[SolveIP_PIEF_gurobi] K=3 | prep=0.000558s | edgesP=2855 | y_vars=8565 | solve=0.229838s | total=0.230397s | chosen_cycles=0
+[build_edges] time=0.016561s | |V|=90 | |E|=3177 | checked=8010
+t = 15 |departures| = 1 , |V(t)| = 90 , |E(t)| = 3177
+[SolveIP_PIEF_gurobi] K=3 | prep=0.000588s | edgesP=3044 | y_vars=9132 | solve=3.213737s | total=3.214327s | chosen_cycles=2
+[build_edges] time=0.027874s | |V|=94 | |E|=3417 | checked=8742
+t = 16 |departures| = 0 , |V(t)| = 94 , |E(t)| = 3417
+[SolveIP_PIEF_gurobi] K=3 | prep=0.000700s | edgesP=3280 | y_vars=9840 | solve=0.177116s | total=0.177816s | chosen_cycles=0
+[build_edges] time=0.017687s | |V|=95 | |E|=3510 | checked=8930
+t = 17 |departures| = 0 , |V(t)| = 95 , |E(t)| = 3510
+[SolveIP_PIEF_gurobi] K=3 | prep=0.000599s | edgesP=3370 | y_vars=10110 | solve=0.749394s | total=0.749993s | chosen_cycles=4
+[build_edges] time=0.018894s | |V|=98 | |E|=3765 | checked=9506
+t = 18 |departures| = 1 , |V(t)| = 98 , |E(t)| = 3765
+[SolveIP_PIEF_gurobi] K=3 | prep=0.000625s | edgesP=3530 | y_vars=10590 | solve=3.260680s | total=3.261309s | chosen_cycles=1
+[build_edges] time=0.020590s | |V|=103 | |E|=4141 | checked=10506
+t = 19 |departures| = 0 , |V(t)| = 103 , |E(t)| = 4141
+[SolveIP_PIEF_gurobi] K=3 | prep=0.000730s | edgesP=3800 | y_vars=11400 | solve=1.450928s | total=1.451659s | chosen_cycles=1
+[build_edges] time=0.025146s | |V|=109 | |E|=4780 | checked=11772
+t = 20 |departures| = 0 , |V(t)| = 109 , |E(t)| = 4780
+[SolveIP_PIEF_gurobi] K=3 | prep=0.000848s | edgesP=4316 | y_vars=12948 | solve=0.328827s | total=0.329677s | chosen_cycles=0
+[build_edges] time=0.027494s | |V|=116 | |E|=5366 | checked=13340
+t = 21 |departures| = 0 , |V(t)| = 116 , |E(t)| = 5366
+[SolveIP_PIEF_gurobi] K=3 | prep=0.001000s | edgesP=4872 | y_vars=14616 | solve=0.306016s | total=0.307018s | chosen_cycles=0
+[build_edges] time=0.029383s | |V|=122 | |E|=5835 | checked=14762
+t = 22 |departures| = 0 , |V(t)| = 122 , |E(t)| = 5835
+[SolveIP_PIEF_gurobi] K=3 | prep=0.001000s | edgesP=5299 | y_vars=15897 | solve=0.343177s | total=0.344178s | chosen_cycles=1
+[build_edges] time=0.033433s | |V|=129 | |E|=6548 | checked=16512
+t = 23 |departures| = 0 , |V(t)| = 129 , |E(t)| = 6548
+[SolveIP_PIEF_gurobi] K=3 | prep=0.001170s | edgesP=5978 | y_vars=17934 | solve=3.190654s | total=3.191825s | chosen_cycles=1
+[build_edges] time=0.035434s | |V|=133 | |E|=6853 | checked=17556
+t = 24 |departures| = 0 , |V(t)| = 133 , |E(t)| = 6853
+[SolveIP_PIEF_gurobi] K=3 | prep=0.001193s | edgesP=6248 | y_vars=18744 | solve=7.039817s | total=7.041013s | chosen_cycles=0
+[build_edges] time=0.039688s | |V|=139 | |E|=7642 | checked=19182
+t = 25 |departures| = 0 , |V(t)| = 139 , |E(t)| = 7642
+[SolveIP_PIEF_gurobi] K=3 | prep=0.001291s | edgesP=7004 | y_vars=21012 | solve=3.945302s | total=3.946594s | chosen_cycles=1
+[build_edges] time=0.043914s | |V|=145 | |E|=8493 | checked=20880
+t = 26 |departures| = 0 , |V(t)| = 145 , |E(t)| = 8493
+[SolveIP_PIEF_gurobi] K=3 | prep=0.001493s | edgesP=7824 | y_vars=23472 | solve=11.000484s | total=11.001981s | chosen_cycles=1
+[build_edges] time=0.047194s | |V|=150 | |E|=9174 | checked=22350
+t = 27 |departures| = 1 , |V(t)| = 150 , |E(t)| = 9174
+[SolveIP_PIEF_gurobi] K=3 | prep=0.001686s | edgesP=8478 | y_vars=25434 | solve=7.760631s | total=7.762319s | chosen_cycles=1
+[build_edges] time=0.050403s | |V|=156 | |E|=10032 | checked=24180
+t = 28 |departures| = 0 , |V(t)| = 156 , |E(t)| = 10032
+[SolveIP_PIEF_gurobi] K=3 | prep=0.001743s | edgesP=9304 | y_vars=27912 | solve=13.475230s | total=13.476975s | chosen_cycles=1
+[build_edges] time=0.051814s | |V|=158 | |E|=10160 | checked=24806
+t = 29 |departures| = 1 , |V(t)| = 158 , |E(t)| = 10160
+[SolveIP_PIEF_gurobi] K=3 | prep=0.001779s | edgesP=9426 | y_vars=28278 | solve=10.904453s | total=10.906235s | chosen_cycles=0
+[build_edges] time=0.055288s | |V|=163 | |E|=10696 | checked=26406
+t = 30 |departures| = 0 , |V(t)| = 163 , |E(t)| = 10696
+[SolveIP_PIEF_gurobi] K=3 | prep=0.001839s | edgesP=9940 | y_vars=29820 | solve=0.632643s | total=0.634483s | chosen_cycles=0
+[build_edges] time=0.062060s | |V|=170 | |E|=11681 | checked=28730
+t = 31 |departures| = 0 , |V(t)| = 170 , |E(t)| = 11681
+[SolveIP_PIEF_gurobi] K=3 | prep=0.001999s | edgesP=10731 | y_vars=32193 | solve=7.709552s | total=7.711552s | chosen_cycles=1
+[build_edges] time=0.072486s | |V|=175 | |E|=12199 | checked=30450
+t = 32 |departures| = 0 , |V(t)| = 175 , |E(t)| = 12199
+[SolveIP_PIEF_gurobi] K=3 | prep=0.002082s | edgesP=11197 | y_vars=33591 | solve=15.589672s | total=15.591756s | chosen_cycles=3
+[build_edges] time=0.069941s | |V|=182 | |E|=13200 | checked=32942
+t = 33 |departures| = 0 , |V(t)| = 182 , |E(t)| = 13200
+[SolveIP_PIEF_gurobi] K=3 | prep=0.002257s | edgesP=12163 | y_vars=36489 | solve=17.171598s | total=17.173859s | chosen_cycles=1
+[build_edges] time=0.070421s | |V|=188 | |E|=14380 | checked=35156
+t = 34 |departures| = 0 , |V(t)| = 188 , |E(t)| = 14380
+[SolveIP_PIEF_gurobi] K=3 | prep=0.002383s | edgesP=13303 | y_vars=39909 | solve=11.922363s | total=11.924748s | chosen_cycles=1
+[build_edges] time=0.074348s | |V|=189 | |E|=14424 | checked=35532
+t = 35 |departures| = 2 , |V(t)| = 189 , |E(t)| = 14424
+[SolveIP_PIEF_gurobi] K=3 | prep=0.002501s | edgesP=13338 | y_vars=40014 | solve=9.438650s | total=9.441154s | chosen_cycles=4
+[build_edges] time=0.078199s | |V|=193 | |E|=15370 | checked=37056
+t = 36 |departures| = 1 , |V(t)| = 193 , |E(t)| = 15370
+[SolveIP_PIEF_gurobi] K=3 | prep=0.002607s | edgesP=14250 | y_vars=42750 | solve=17.738385s | total=17.740994s | chosen_cycles=1
+[build_edges] time=0.079302s | |V|=194 | |E|=15740 | checked=37442
+t = 37 |departures| = 1 , |V(t)| = 194 , |E(t)| = 15740
+[SolveIP_PIEF_gurobi] K=3 | prep=0.002738s | edgesP=14609 | y_vars=43827 | solve=21.464078s | total=21.466818s | chosen_cycles=0
+[build_edges] time=0.089147s | |V|=200 | |E|=17215 | checked=39800
+t = 38 |departures| = 1 , |V(t)| = 200 , |E(t)| = 17215
+[SolveIP_PIEF_gurobi] K=3 | prep=0.003105s | edgesP=16013 | y_vars=48039 | solve=1.418603s | total=1.421710s | chosen_cycles=4
+[build_edges] time=0.105227s | |V|=205 | |E|=18337 | checked=41820
+t = 39 |departures| = 1 , |V(t)| = 205 , |E(t)| = 18337
+[SolveIP_PIEF_gurobi] K=3 | prep=0.003511s | edgesP=17088 | y_vars=51264 | solve=35.782539s | total=35.786059s | chosen_cycles=0
+[build_edges] time=0.097229s | |V|=206 | |E|=18597 | checked=42230
+t = 40 |departures| = 1 , |V(t)| = 206 , |E(t)| = 18597
+[SolveIP_PIEF_gurobi] K=3 | prep=0.003268s | edgesP=17343 | y_vars=52029 | solve=1.440289s | total=1.443558s | chosen_cycles=1
+[build_edges] time=0.113574s | |V|=211 | |E|=19560 | checked=44310
+t = 41 |departures| = 0 , |V(t)| = 211 , |E(t)| = 19560
+Traceback (most recent call last):
+  File "/Users/zhongmingyu/Desktop/Matching-Gym/Kidney_Exchange/main.py", line 79, in <module>
+    g, D = step_pool(
+  File "/Users/zhongmingyu/Desktop/Matching-Gym/Kidney_Exchange/utils/Step_Pool.py", line 46, in step_pool
+    chosen = SolveIP_PIEF_gurobi(
+  File "/Users/zhongmingyu/Desktop/Matching-Gym/Kidney_Exchange/utils/SolveIP.py", line 713, in SolveIP_PIEF_gurobi
+    raise RuntimeError(f"SolveIP_PIEF_gurobi failed: status={m.Status}")
+RuntimeError: SolveIP_PIEF_gurobi failed: status=11

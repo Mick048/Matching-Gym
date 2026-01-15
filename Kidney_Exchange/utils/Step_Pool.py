@@ -1,11 +1,16 @@
-from utils.SolveIP import SolveIP_scipy, SolveIP_gurobi
+from utils.SolveIP import SolveIP_scipy, SolveIP_gurobi, SolveIP_PICEF_gurobi, SolveIP_PIEF_gurobi
 from utils.Events import expire, renege, negative_crossmatch
 from utils.Sample_Arrivals import sample_arrivals
 from utils.Build_Edges import build_edges
 
-def step_pool(graph, t, lam_p, lam_a, f_p, f_a, rng,
-              expire_prob=0.00220192718495970, renege_prob=0.5,
-              max_cycle_len=3, max_chain_len=4):
+
+def step_pool(
+    graph, t, lam_p, lam_a, f_p, f_a, rng,
+    expire_prob=0.00220192718495970, renege_prob=0.5,
+    max_cycle_len=3, max_chain_len=4,
+    solveip_method="PIEF",   
+    profile_solveip=True     
+):
     """
     Returns:
       graph (updated in-place),
@@ -13,8 +18,41 @@ def step_pool(graph, t, lam_p, lam_a, f_p, f_a, rng,
     """
 
     # 1) SolveIP -> return chosen STRUCTURES (cycle/chain grouped with order)
-    # chosen = SolveIP_scipy(graph, max_cycle_len=max_cycle_len, max_chain_len=max_chain_len, profile=True)
-    chosen = SolveIP_gurobi(graph, max_cycle_len=max_cycle_len, max_chain_len=max_chain_len, profile=True)
+    method = (solveip_method or "PIEF").lower()
+
+    if method in ("scipy", "solveip_scipy"):
+        chosen = SolveIP_scipy(
+            graph,
+            max_cycle_len=max_cycle_len,
+            max_chain_len=max_chain_len,
+            profile=profile_solveip
+        )
+    elif method in ("gurobi", "solveip_gurobi", "enum"):
+        chosen = SolveIP_gurobi(
+            graph,
+            max_cycle_len=max_cycle_len,
+            max_chain_len=max_chain_len,
+            profile=profile_solveip
+        )
+    elif method in ("picef", "picef_gurobi", "solveip_picef"):
+        chosen = SolveIP_PICEF_gurobi(
+            graph,
+            max_cycle_len=max_cycle_len,
+            max_chain_len=max_chain_len,
+            profile=profile_solveip
+        )
+    elif method in ("pief", "pief_gurobi", "solveip_pief"):
+        # PIEF 只考慮 cycles：max_chain_len 不需要
+        chosen = SolveIP_PIEF_gurobi(
+            graph,
+            max_cycle_len=max_cycle_len,
+            profile=profile_solveip
+        )
+    else:
+        raise ValueError(
+            f"Unknown solveip_method={solveip_method!r}. "
+            "Use one of: 'scipy', 'gurobi', 'picef', 'pief'."
+        )
 
     # 2) Expire on V(t)
     expired = set()
@@ -57,7 +95,6 @@ def step_pool(graph, t, lam_p, lam_a, f_p, f_a, rng,
     chosen = filtered
 
     # 3) Cycles: all-or-nothing crossmatch
-    # MIN CHANGE: evaluate crossmatch per executed edge (u->v) and record graph.crossmatch_hist[(u,v)]
     kept = []
     for s in chosen:
         if s["type"] != "cycle":
@@ -67,7 +104,7 @@ def step_pool(graph, t, lam_p, lam_a, f_p, f_a, rng,
         ok = True
         for (u, v) in s["edges"]:
             fail = negative_crossmatch(graph.V[v], rng)   # True means fail
-            graph.crossmatch_hist[(u, v)] = (not fail)    # True means OK (negative crossmatch)
+            graph.crossmatch_hist[(u, v)] = (not fail)    # True means OK
             if fail:
                 ok = False
                 break
@@ -78,15 +115,14 @@ def step_pool(graph, t, lam_p, lam_a, f_p, f_a, rng,
     chosen = kept
 
     # 4) Chains: sequential with tail cut (crossmatch/renege)
-    # MIN CHANGE: record crossmatch outcome for each attempted edge (u->v)
     kept = []
     for s in chosen:
         if s["type"] != "chain":
             kept.append(s)
             continue
 
-        nodes = s["nodes"]  # (a0, v1, v2, ...)
-        edges = s["edges"]  # ((a0,v1),(v1,v2),...)
+        nodes = s["nodes"]
+        edges = s["edges"]
 
         if len(edges) == 0:
             continue
@@ -99,13 +135,11 @@ def step_pool(graph, t, lam_p, lam_a, f_p, f_a, rng,
             graph.crossmatch_hist[(u, v)] = (not fail)
 
             if fail:
-                # stop BEFORE this edge executes => keep prefix
                 cut_edges = edges[:i]
                 cut_nodes = nodes[:i+1]
                 break
 
             if renege(graph.V[v], rng, default_prob=renege_prob):
-                # edge executes into v; stop AFTER v
                 cut_edges = edges[:i+1]
                 cut_nodes = nodes[:i+2]
                 break
@@ -120,7 +154,6 @@ def step_pool(graph, t, lam_p, lam_a, f_p, f_a, rng,
     for s in chosen:
         executed_edges.extend(list(s["edges"]))
 
-    # recipients who actually receive depart; altruists depart iff they donated
     for (u, v) in executed_edges:
         departures.add(v)
         if u in graph.V and graph.V[u].is_altruist:

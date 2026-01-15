@@ -1,0 +1,129 @@
+[LOG] experimental_results/logs/picef_K3L2_seed0_20260114_225332.log
+[build_edges] time=0.000005s | |V|=2 | |E|=0 | checked=2
+SOLVER = picef | seed = 0
+T = 40 | lam_p = 4.77 | lam_a = 0.15 | K = 3 | L = 2
+Initial: |V(0)| = 2 , |E(0)| = 0
+Set parameter Username
+Set parameter LicenseID to value 2759812
+Academic license - for non-commercial use only - expires 2026-12-29
+[SolveIP_PICEF_gurobi] reduced=False | dist=0.000000s | cycles_enum=0.000008s | ykeys=0.000002s (n_y=0) | solve=0.004691s | total=0.004701s | chosen=0
+[build_edges] time=0.000153s | |V|=6 | |E|=10 | checked=30
+t = 0 |departures| = 0 , |V(t)| = 6 , |E(t)| = 10
+[SolveIP_PICEF_gurobi] reduced=False | dist=0.000000s | cycles_enum=0.000026s | ykeys=0.000012s (n_y=10) | solve=0.000490s | total=0.000529s | chosen=1
+[build_edges] time=0.000576s | |V|=16 | |E|=97 | checked=240
+t = 1 |departures| = 0 , |V(t)| = 16 , |E(t)| = 97
+[SolveIP_PICEF_gurobi] reduced=False | dist=0.000000s | cycles_enum=0.001259s | ykeys=0.000075s (n_y=97) | solve=0.001489s | total=0.002824s | chosen=4
+[build_edges] time=0.000750s | |V|=18 | |E|=135 | checked=306
+t = 2 |departures| = 0 , |V(t)| = 18 , |E(t)| = 135
+[SolveIP_PICEF_gurobi] reduced=False | dist=0.000000s | cycles_enum=0.002844s | ykeys=0.000063s (n_y=135) | solve=0.003711s | total=0.006619s | chosen=5
+[build_edges] time=0.001605s | |V|=24 | |E|=281 | checked=552
+t = 3 |departures| = 0 , |V(t)| = 24 , |E(t)| = 281
+[SolveIP_PICEF_gurobi] reduced=False | dist=0.000000s | cycles_enum=0.011786s | ykeys=0.000145s (n_y=281) | solve=0.011184s | total=0.023116s | chosen=8
+[build_edges] time=0.002467s | |V|=30 | |E|=475 | checked=870
+t = 4 |departures| = 2 , |V(t)| = 30 , |E(t)| = 475
+[SolveIP_PICEF_gurobi] reduced=False | dist=0.000000s | cycles_enum=0.039956s | ykeys=0.011697s (n_y=475) | solve=0.017284s | total=0.068939s | chosen=10
+[build_edges] time=0.002387s | |V|=30 | |E|=478 | checked=870
+t = 5 |departures| = 5 , |V(t)| = 30 , |E(t)| = 478
+[SolveIP_PICEF_gurobi] reduced=False | dist=0.000000s | cycles_enum=0.040130s | ykeys=0.000229s (n_y=478) | solve=0.016711s | total=0.057071s | chosen=9
+[build_edges] time=0.002592s | |V|=34 | |E|=529 | checked=1122
+t = 6 |departures| = 2 , |V(t)| = 34 , |E(t)| = 529
+[SolveIP_PICEF_gurobi] reduced=False | dist=0.000000s | cycles_enum=0.043362s | ykeys=0.000305s (n_y=529) | solve=0.030102s | total=0.073771s | chosen=9
+[build_edges] time=0.002861s | |V|=35 | |E|=592 | checked=1190
+t = 7 |departures| = 4 , |V(t)| = 35 , |E(t)| = 592
+[SolveIP_PICEF_gurobi] reduced=False | dist=0.000000s | cycles_enum=0.059822s | ykeys=0.000288s (n_y=592) | solve=0.026024s | total=0.086135s | chosen=9
+[build_edges] time=0.003438s | |V|=39 | |E|=733 | checked=1482
+t = 8 |departures| = 0 , |V(t)| = 39 , |E(t)| = 733
+[SolveIP_PICEF_gurobi] reduced=False | dist=0.000000s | cycles_enum=0.092118s | ykeys=0.000403s (n_y=733) | solve=0.034634s | total=0.127157s | chosen=10
+[build_edges] time=0.004761s | |V|=44 | |E|=1017 | checked=1892
+t = 9 |departures| = 0 , |V(t)| = 44 , |E(t)| = 1017
+[SolveIP_PICEF_gurobi] reduced=False | dist=0.000000s | cycles_enum=0.197269s | ykeys=0.000509s (n_y=1017) | solve=0.043271s | total=0.241050s | chosen=12
+[build_edges] time=0.005225s | |V|=45 | |E|=1099 | checked=1980
+t = 10 |departures| = 0 , |V(t)| = 45 , |E(t)| = 1099
+[SolveIP_PICEF_gurobi] reduced=False | dist=0.000000s | cycles_enum=0.239277s | ykeys=0.000538s (n_y=1099) | solve=0.060051s | total=0.299868s | chosen=13
+[build_edges] time=0.005447s | |V|=46 | |E|=1148 | checked=2070
+t = 11 |departures| = 0 , |V(t)| = 46 , |E(t)| = 1148
+[SolveIP_PICEF_gurobi] reduced=False | dist=0.000000s | cycles_enum=0.254145s | ykeys=0.000521s (n_y=1148) | solve=0.066502s | total=0.321172s | chosen=13
+[build_edges] time=0.006306s | |V|=50 | |E|=1267 | checked=2450
+t = 12 |departures| = 0 , |V(t)| = 50 , |E(t)| = 1267
+[SolveIP_PICEF_gurobi] reduced=False | dist=0.000000s | cycles_enum=0.282096s | ykeys=0.000688s (n_y=1267) | solve=0.072618s | total=0.355404s | chosen=14
+[build_edges] time=0.007856s | |V|=56 | |E|=1561 | checked=3080
+t = 13 |departures| = 0 , |V(t)| = 56 , |E(t)| = 1561
+[SolveIP_PICEF_gurobi] reduced=False | dist=0.000000s | cycles_enum=0.424060s | ykeys=0.000756s (n_y=1561) | solve=0.082780s | total=0.507598s | chosen=16
+[build_edges] time=0.008960s | |V|=60 | |E|=1842 | checked=3540
+t = 14 |departures| = 0 , |V(t)| = 60 , |E(t)| = 1842
+[SolveIP_PICEF_gurobi] reduced=False | dist=0.000000s | cycles_enum=0.587058s | ykeys=0.001058s (n_y=1842) | solve=0.126120s | total=0.714238s | chosen=17
+[build_edges] time=0.010746s | |V|=67 | |E|=2216 | checked=4422
+t = 15 |departures| = 1 , |V(t)| = 67 , |E(t)| = 2216
+[SolveIP_PICEF_gurobi] reduced=False | dist=0.000000s | cycles_enum=0.812708s | ykeys=0.001185s (n_y=2216) | solve=0.158251s | total=0.972145s | chosen=19
+[build_edges] time=0.011137s | |V|=68 | |E|=2329 | checked=4556
+t = 16 |departures| = 1 , |V(t)| = 68 , |E(t)| = 2329
+[SolveIP_PICEF_gurobi] reduced=False | dist=0.000000s | cycles_enum=0.877174s | ykeys=0.001081s (n_y=2329) | solve=0.152963s | total=1.031221s | chosen=19
+[build_edges] time=0.011889s | |V|=69 | |E|=2423 | checked=4692
+t = 17 |departures| = 0 , |V(t)| = 69 , |E(t)| = 2423
+[SolveIP_PICEF_gurobi] reduced=False | dist=0.000000s | cycles_enum=0.961943s | ykeys=0.001146s (n_y=2423) | solve=0.170882s | total=1.133972s | chosen=19
+[build_edges] time=0.013368s | |V|=72 | |E|=2635 | checked=5112
+t = 18 |departures| = 0 , |V(t)| = 72 , |E(t)| = 2635
+[SolveIP_PICEF_gurobi] reduced=False | dist=0.000000s | cycles_enum=1.103661s | ykeys=0.001145s (n_y=2635) | solve=0.222228s | total=1.327036s | chosen=22
+[build_edges] time=0.013208s | |V|=72 | |E|=2635 | checked=5112
+t = 19 |departures| = 2 , |V(t)| = 72 , |E(t)| = 2635
+[SolveIP_PICEF_gurobi] reduced=False | dist=0.000000s | cycles_enum=1.100580s | ykeys=0.001351s (n_y=2635) | solve=0.180412s | total=1.282344s | chosen=20
+[build_edges] time=0.014342s | |V|=74 | |E|=2865 | checked=5402
+t = 20 |departures| = 0 , |V(t)| = 74 , |E(t)| = 2865
+[SolveIP_PICEF_gurobi] reduced=False | dist=0.000000s | cycles_enum=1.297910s | ykeys=0.001298s (n_y=2865) | solve=0.267225s | total=1.566434s | chosen=23
+[build_edges] time=0.015650s | |V|=77 | |E|=3155 | checked=5852
+t = 21 |departures| = 2 , |V(t)| = 77 , |E(t)| = 3155
+[SolveIP_PICEF_gurobi] reduced=False | dist=0.000000s | cycles_enum=1.685913s | ykeys=0.001464s (n_y=3155) | solve=0.248645s | total=1.936025s | chosen=23
+[build_edges] time=0.019026s | |V|=83 | |E|=3606 | checked=6806
+t = 22 |departures| = 2 , |V(t)| = 83 , |E(t)| = 3606
+[SolveIP_PICEF_gurobi] reduced=False | dist=0.000000s | cycles_enum=2.154597s | ykeys=0.001936s (n_y=3606) | solve=0.294506s | total=2.451041s | chosen=27
+[build_edges] time=0.018730s | |V|=85 | |E|=3842 | checked=7140
+t = 23 |departures| = 0 , |V(t)| = 85 , |E(t)| = 3842
+[SolveIP_PICEF_gurobi] reduced=False | dist=0.000000s | cycles_enum=2.419531s | ykeys=0.001712s (n_y=3842) | solve=0.281974s | total=2.703219s | chosen=27
+[build_edges] time=0.021693s | |V|=88 | |E|=4248 | checked=7656
+t = 24 |departures| = 2 , |V(t)| = 88 , |E(t)| = 4248
+[SolveIP_PICEF_gurobi] reduced=False | dist=0.000000s | cycles_enum=3.038153s | ykeys=0.002072s (n_y=4248) | solve=0.388513s | total=3.428741s | chosen=28
+[build_edges] time=0.022756s | |V|=91 | |E|=4488 | checked=8190
+t = 25 |departures| = 0 , |V(t)| = 91 , |E(t)| = 4488
+[SolveIP_PICEF_gurobi] reduced=False | dist=0.000000s | cycles_enum=3.246752s | ykeys=0.002206s (n_y=4488) | solve=0.365909s | total=3.614870s | chosen=33
+[build_edges] time=0.024575s | |V|=94 | |E|=4766 | checked=8742
+t = 26 |departures| = 2 , |V(t)| = 94 , |E(t)| = 4766
+[SolveIP_PICEF_gurobi] reduced=False | dist=0.000000s | cycles_enum=3.749740s | ykeys=0.002116s (n_y=4766) | solve=0.406154s | total=4.158013s | chosen=31
+[build_edges] time=0.023990s | |V|=96 | |E|=4784 | checked=9120
+t = 27 |departures| = 5 , |V(t)| = 96 , |E(t)| = 4784
+[SolveIP_PICEF_gurobi] reduced=False | dist=0.000000s | cycles_enum=3.591862s | ykeys=0.002290s (n_y=4784) | solve=0.357299s | total=3.951453s | chosen=31
+[build_edges] time=0.025610s | |V|=99 | |E|=5065 | checked=9702
+t = 28 |departures| = 2 , |V(t)| = 99 , |E(t)| = 5065
+[SolveIP_PICEF_gurobi] reduced=False | dist=0.000000s | cycles_enum=3.979939s | ykeys=0.002446s (n_y=5065) | solve=0.443995s | total=4.426382s | chosen=29
+[build_edges] time=0.039088s | |V|=101 | |E|=5220 | checked=10100
+t = 29 |departures| = 0 , |V(t)| = 101 , |E(t)| = 5220
+[SolveIP_PICEF_gurobi] reduced=False | dist=0.000000s | cycles_enum=4.196473s | ykeys=0.002434s (n_y=5220) | solve=0.478814s | total=4.677723s | chosen=31
+[build_edges] time=0.026497s | |V|=102 | |E|=5329 | checked=10302
+t = 30 |departures| = 3 , |V(t)| = 102 , |E(t)| = 5329
+[SolveIP_PICEF_gurobi] reduced=False | dist=0.000000s | cycles_enum=4.452384s | ykeys=0.002357s (n_y=5329) | solve=0.398942s | total=4.853685s | chosen=29
+[build_edges] time=0.028666s | |V|=106 | |E|=5705 | checked=11130
+t = 31 |departures| = 0 , |V(t)| = 106 , |E(t)| = 5705
+[SolveIP_PICEF_gurobi] reduced=False | dist=0.000000s | cycles_enum=4.685859s | ykeys=0.002647s (n_y=5705) | solve=0.451018s | total=5.139530s | chosen=34
+[build_edges] time=0.043032s | |V|=109 | |E|=6153 | checked=11772
+t = 32 |departures| = 3 , |V(t)| = 109 , |E(t)| = 6153
+[SolveIP_PICEF_gurobi] reduced=False | dist=0.000000s | cycles_enum=5.620187s | ykeys=0.002999s (n_y=6153) | solve=0.614541s | total=6.237730s | chosen=34
+[build_edges] time=0.029438s | |V|=106 | |E|=5938 | checked=11130
+t = 33 |departures| = 5 , |V(t)| = 106 , |E(t)| = 5938
+[SolveIP_PICEF_gurobi] reduced=False | dist=0.000000s | cycles_enum=5.490854s | ykeys=0.002992s (n_y=5938) | solve=0.516042s | total=6.009891s | chosen=34
+[build_edges] time=0.028763s | |V|=107 | |E|=5917 | checked=11342
+t = 34 |departures| = 3 , |V(t)| = 107 , |E(t)| = 5917
+[SolveIP_PICEF_gurobi] reduced=False | dist=0.000000s | cycles_enum=5.289245s | ykeys=0.002754s (n_y=5917) | solve=0.524803s | total=5.816803s | chosen=35
+[build_edges] time=0.028449s | |V|=105 | |E|=5441 | checked=10920
+t = 35 |departures| = 5 , |V(t)| = 105 , |E(t)| = 5441
+[SolveIP_PICEF_gurobi] reduced=False | dist=0.000000s | cycles_enum=4.234831s | ykeys=0.002598s (n_y=5441) | solve=0.485001s | total=4.722432s | chosen=30
+[build_edges] time=0.029611s | |V|=110 | |E|=5878 | checked=11990
+t = 36 |departures| = 4 , |V(t)| = 110 , |E(t)| = 5878
+[SolveIP_PICEF_gurobi] reduced=False | dist=0.000000s | cycles_enum=4.968120s | ykeys=0.002620s (n_y=5878) | solve=0.415269s | total=5.386010s | chosen=30
+[build_edges] time=0.034347s | |V|=116 | |E|=6664 | checked=13340
+t = 37 |departures| = 0 , |V(t)| = 116 , |E(t)| = 6664
+[SolveIP_PICEF_gurobi] reduced=False | dist=0.000000s | cycles_enum=6.464656s | ykeys=0.003036s (n_y=6664) | solve=0.580732s | total=7.048426s | chosen=36
+[build_edges] time=0.030085s | |V|=113 | |E|=6260 | checked=12656
+t = 38 |departures| = 3 , |V(t)| = 113 , |E(t)| = 6260
+[SolveIP_PICEF_gurobi] reduced=False | dist=0.000000s | cycles_enum=5.660629s | ykeys=0.002958s (n_y=6260) | solve=0.639860s | total=6.303450s | chosen=34
+[build_edges] time=0.033063s | |V|=114 | |E|=6403 | checked=12882
+t = 39 |departures| = 2 , |V(t)| = 114 , |E(t)| = 6403
+DONE | final |V| = 114 | final |E| = 6403
