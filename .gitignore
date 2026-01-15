@@ -1,3 +1,4 @@
 *.csv
 *.lic
 *.pyc
+Kidney_Exchange/gurobi.log
